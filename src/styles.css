@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+#header{
+    background-color: rgba(0, 0, 1, 0.705);
+    margin-left: 10px;margin-right: 30px;
+}
+#argprog{
+    width: 180px;
+    height: 100px;
+    border: 0.2px black
+}
+
+
+.retrato { 
+        width: 195px;
+        height: 200px;
+        border-radius: 3rem;
+        border-style: rgb(2, 56, 58);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616);
+        padding: 10px 10px 10px 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+#banner {
+        width: 1420px;
+        height: 250px;
+        margin-bottom: 0rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem
+    }
+#nombre {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+        font-size: 40px;
+        color: rgb(10, 10, 10);
+        border-color: black 5px;
+        border-radius: 2rem;
+        padding: 5px;
+        padding-left: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.616); 
+    }
+.contacto {
+    color: rgb(55, 232, 255);
+    font-size: 20px;
+    line-height: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-decoration: dashed;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    background-color: rgb(155, 6, 6);
+    box-shadow: rgb(248, 102, 102) 5px 5px 15px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-block;
+}
+#uba{
+    width: 160px;
+    height: 110px;
+}
+.red_social{
+    width: 55.27px;
+    height: 30px;
+}
+.iconos {
+    width: 140px;
+    height: 80px;
+    border: 0.2px black;
+}
+#bloques{
+    border: 2px solid rgb(55, 232, 255);
+    border-radius: 2rem;
+    margin: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+}
+
+#editar {
+    width: 1,5rem;
+    height: 1,5rem;
+}
+
