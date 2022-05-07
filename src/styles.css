@@ -1,10 +1,22 @@
 #header{
-    background-color: rgba(0, 0, 1, 0.705);
+    background-color: rgba(87, 225, 243, 0.884);
     margin-left: 10px;margin-right: 30px;
 }
+#twitter{
+    font-style: italic;
+}
+
+#insta{
+    font-style: italic;
+}
+
+#login{
+    font-style: italic;
+}
+
 #argprog{
     width: 180px;
-    height: 100px;
+    height: 80px;
     border: 0.2px black
 }
 
