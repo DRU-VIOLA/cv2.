@@ -31,13 +31,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let persona of personas">
-        <td>{{persona.id}}</td>
-        <td>{{persona.nombre}}</td>
-        <td>{{persona.apellido}}</td>
-        <td>{{persona.email}}</td>
-        <td><button class="btn btn-outline-primary" routerLink="/ver/{{persona.id}}"><i class="far fa-eye"></i> Ver</button></td>
-        <td><button class="btn btn-outline-warning" routerLink="/editar/{{persona.id}}"><i class="far fa-edit"></i> Editar</button></td>
+      <tr *ngFor="let personas of Persona">
+        <td>{{personas.id}}</td>
+        <td>{{personas.nombre}}</td>
+        <td>{{personas.apellido}}</td>
+        <td>{{personas.email}}</td>
+        <td><button class="btn btn-outline-primary" routerLink ="[/ver/{{personas.id}}]"><i class="far fa-eye"></i> Ver</button></td>
+        <td><button class="btn btn-outline-warning" routerLink ="/editar/{{personas.id}}"><i class="far fa-edit"></i> Editar</button></td>
       </tr>
     </tbody>
   </table>

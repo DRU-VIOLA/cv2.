@@ -1,13 +1,13 @@
 import { NgModule } from "@angular/core";
-import { PersonaComponent } from "./componentes/persona/persona.component";
+import { Persona } from "./componentes/persona/persona.component";
 import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
-    {path: '', component: PersonaComponent},
-    {path: 'ver/personas', component: PersonaComponent},
-    {path: 'new/persona', component: PersonaComponent},
-    {path: 'delete/ :id', component: PersonaComponent},
-    {path: 'editar/ :id', component: PersonaComponent},
-    {path: '**', component: PersonaComponent}
+    {path: '', component: Persona},
+    {path: 'ver/personas', component: Persona},
+    {path: 'new/persona', component: Persona},
+    {path: 'delete/ :id', component: Persona},
+    {path: 'editar/ :id', component: Persona},
+    {path: '**', component: Persona}
   ];
 
   @NgModule({

@@ -9,7 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./persona.component.css']
 })
   
-    export class PersonaComponent implements OnInit { 
+    export class Persona implements OnInit { 
     id? : number;
     nombre : String;
     apellido : String;
@@ -17,8 +17,8 @@ import { PersonaService } from 'src/app/service/persona.service';
     sobre_mi : String;
     url_foto : String;
 
-  persona: PersonaComponent[] =[];
-  personas: PersonaComponent[] = [];
+  
+  personas: Persona[] = [];
   personaService: any;
 
   constructor(nombre : String, apellido : String, email : String, sobre_mi : String, url_foto : String) {
@@ -34,7 +34,7 @@ ngOnInit(): void {
   this.cargarPersonas();
 }
 cargarPersonas():void {
-  this.personaService.verPersonas().suscribe((data: PersonaComponent[]) => {this.personas= data;}),
+  this.personaService.verPersonas().suscribe((data: Persona[]) => {this.personas= data;}),
     (  err: any) =>{console.log (err);}
 }
   }
