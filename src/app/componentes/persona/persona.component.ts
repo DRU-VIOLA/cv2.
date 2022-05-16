@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { of } from 'rxjs';
 import { PersonaService } from 'src/app/service/persona.service';
-
+import { Persona } from 'src/app/model/persona.model';
 
 @Component({
   selector: 'app-persona',
@@ -9,32 +9,12 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./persona.component.css']
 })
   
-    export class Persona implements OnInit { 
-    id? : number;
-    nombre : String;
-    apellido : String;
-    email : String;
-    sobre_mi : String;
-    url_foto : String;
-
+    export class PersonaComponent implements OnInit { 
+   persona: Persona = new Persona("","","","","");
   
-  personas: Persona[] = [];
-  personaService: any;
-
-  constructor(nombre : String, apellido : String, email : String, sobre_mi : String, url_foto : String) {
-           
-           this.nombre = nombre;
-           this.apellido= apellido;
-           this.email= email;
-           this.sobre_mi= sobre_mi;
-           this.url_foto= url_foto;
-   }
-
+  constructor(public personaService: PersonaService) { } 
+  
+  
 ngOnInit(): void {
-  this.cargarPersonas();
+  this.personaService.verPersonas().subscribe(data => (this.persona = data))}
 }
-cargarPersonas():void {
-  this.personaService.verPersonas().suscribe((data: Persona[]) => {this.personas= data;}),
-    (  err: any) =>{console.log (err);}
-}
-  }

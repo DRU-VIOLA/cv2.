@@ -9,7 +9,7 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { IdiomasComponent } from './componentes/idiomas/idiomas.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
