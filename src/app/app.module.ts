@@ -8,13 +8,9 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { IdiomasComponent } from './componentes/idiomas/idiomas.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-
-import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-
-
-
 
 @NgModule({
   declarations: [
@@ -33,8 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
   AppRoutingModule, 
   HttpClientModule, 
   FormsModule],
-  
-  
+    
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-
 import { RouterModule, Routes } from '@angular/router';
 import { Persona } from "./model/persona.model";
 const routes: Routes = [

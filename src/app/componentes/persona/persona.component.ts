@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { of } from 'rxjs';
-import { PersonaService } from 'src/app/service/persona.service';
 import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/servicio/persona.service';
 
 @Component({
   selector: 'app-persona',
@@ -10,11 +9,12 @@ import { Persona } from 'src/app/model/persona.model';
 })
   
     export class PersonaComponent implements OnInit { 
-   persona: Persona = new Persona("","","","","");
+  persona: Persona[] = [];
   
   constructor(public personaService: PersonaService) { } 
   
-  
+    
 ngOnInit(): void {
-  this.personaService.verPersonas().subscribe(data => (this.persona = data))}
+  this.personaService.getPersona().subscribe(data=>{this.persona=data});
 }
+    }
